@@ -15,6 +15,7 @@ exports.handler = (event, context) => {
             let response = getResponse({
                 output: output,
                 reprompt: false,
+                cardTitle: name,
                 endSession: true
             });
             context.succeed(response);
@@ -47,6 +48,17 @@ function getResponse (opts) {
                 text: "Would you like to wish someone?"
             }
         };
+    } if(opts.cardTitle) {
+        let cardTitle = "Hello " + opts.cardTitle;
+        response.response.card = {
+            type: "Standard",
+            title: cardTitle,
+            text: "Welcome to Grace Hopper",
+            image : {
+                smallImageUrl: "https://www.serendipitystamps.com/mm5/pics/stamps/619hellosmall.gif",
+                largeImageUrl: "https://www.serendipitystamps.com/mm5/pics/stamps/619hellosmall.gif"
+            }
+        }
     }
     return response;
 }
