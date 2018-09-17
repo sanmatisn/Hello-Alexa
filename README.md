@@ -23,3 +23,9 @@ AWS Region Table
 Alexa Request and Response JSON Reference
 ---------
     https://developer.amazon.com/docs/custom-skills/request-and-response-json-reference.html#request-body-syntax
+    
+Include a Card in Your Skill's Response
+-----
+    https://developer.amazon.com/docs/custom-skills/include-a-card-in-your-skills-response.html
+    
+
