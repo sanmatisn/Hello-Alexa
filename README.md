@@ -20,6 +20,10 @@ AWS Region Table
 ---------
     https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
     
+Built-In Intents
+------
+https://developer.amazon.com/docs/custom-skills/de-implement-the-built-in-intents.html
+    
 Alexa Request and Response JSON Reference
 ---------
     https://developer.amazon.com/docs/custom-skills/request-and-response-json-reference.html#request-body-syntax
@@ -27,5 +31,7 @@ Alexa Request and Response JSON Reference
 Include a Card in Your Skill's Response
 -----
     https://developer.amazon.com/docs/custom-skills/include-a-card-in-your-skills-response.html
+
+
     
 
