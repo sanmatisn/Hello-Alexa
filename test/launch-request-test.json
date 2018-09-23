@@ -1,0 +1,18 @@
+{
+  "session": {
+    "new": false,
+    "sessionId": "sessionId",
+    "attributes": {},
+    "user": {
+      "userId": "userId"
+    },
+    "application": {
+      "applicationId": "amzn1.ask.skill.2e662fe0-51bb-4029-81dc-7521a74d1c22"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "type": "LaunchRequest",
+    "requestId": "requestId"
+  }
+}

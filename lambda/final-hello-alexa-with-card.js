@@ -8,7 +8,9 @@ exports.handler = (event, context) => {
             endSession: false
         });
         context.succeed(response);
-    } else if(request.type === "IntentRequest") {
+
+    }
+    else if(request.type === "IntentRequest") {
         if(request.intent.name === "helloIntent") {
             let name = request.intent.slots.fname.value;
             let output = "Hello "+name+ ". Welcome to Grace Hopper!";
@@ -22,9 +24,8 @@ exports.handler = (event, context) => {
         } else {
             context.fail("Unknown intent name");
         }
-    } else if(request.type === "SessionEndedRequest") {
-
-    } else {
+    }
+    else {
         context.fail("Unknown intent type");
     }
 
@@ -48,7 +49,9 @@ function getResponse (opts) {
                 text: "Would you like to wish someone?"
             }
         };
-    } if(opts.cardTitle) {
+    }
+
+    if(opts.cardTitle) {
         let cardTitle = "Hello " + opts.cardTitle;
         response.response.card = {
             type: "Standard",
