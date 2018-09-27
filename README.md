@@ -28,6 +28,10 @@ https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services
 Built-In Intents
 ------
 https://developer.amazon.com/docs/custom-skills/de-implement-the-built-in-intents.html
+
+Lambda
+----
+https://aws.amazon.com/lambda/
     
 Alexa Request and Response JSON Reference
 ---------
