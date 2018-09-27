@@ -10,6 +10,20 @@ exports.handler = (event, context) => {
         context.succeed(response);
 
     }
+    else if(request.type === "IntentRequest") {
+        if(request.intent.name === "helloIntent") {
+            let name = request.intent.slots.fname.value;
+            let output = "Hello "+name+ ". Welcome to Grace Hopper!";
+            let response = getResponse({
+                output: output,
+                reprompt: false,
+                endSession: true
+            });
+            context.succeed(response);
+        } else {
+            context.fail("Unknown intent name");
+        }
+    }
     else {
         context.fail("Unknown intent type");
     }
