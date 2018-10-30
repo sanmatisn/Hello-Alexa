@@ -18,7 +18,7 @@ exports.handler = (event, context) => {
         if(request.intent.name === "HelloWorldIntent") {
             let name = request.intent.slots.somename.value;
             getNickName(name, function (data) {
-                var finalOutput ="Hello "+ data +". Welcome to Grace Hopper!";
+                var finalOutput ="Hello "+ data +". Welcome to Developer Week at Austin!";
                     let response = getResponse({
                     output: finalOutput,
                     reprompt: false,
