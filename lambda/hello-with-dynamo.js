@@ -18,7 +18,7 @@ exports.handler = (event, context) => {
         if(request.intent.name === "HelloWorldIntent") {
             let name = request.intent.slots.somename.value;
             getNickName(name, function (data) {
-                var finalOutput ="Hello "+ data +". Welcome to Grace Hopper!";
+                var finalOutput ="Hello "+ data +". Welcome to Developer Week at Austin!";
                     let response = getResponse({
                     output: finalOutput,
                     reprompt: false,
@@ -83,7 +83,7 @@ function getResponse (opts) {
         response.response.card = {
             type: "Standard",
             title: cardTitle,
-            text: "Welcome to Grace Hopper",
+            text: "Welcome to Developer Week at Austin",
             image : {
                 smallImageUrl: "https://www.serendipitystamps.com/mm5/pics/stamps/619hellosmall.gif",
                 largeImageUrl: "https://www.serendipitystamps.com/mm5/pics/stamps/619hellosmall.gif"
