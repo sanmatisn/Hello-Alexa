@@ -2,7 +2,7 @@
 let AWS = require("aws-sdk");
 
 AWS.config.update({
-  region: "us-west-2"
+  region: "us-east-1"
 });
 
 exports.handler = (event, context) => {
@@ -15,9 +15,9 @@ exports.handler = (event, context) => {
         });
         context.succeed(response);
     } else if(request.type === "IntentRequest") {
-        if(request.intent.name === "HelloWorldIntent") {
-            let name = request.intent.slots.somename.value;
-            getNickName(name, function (data) {
+        if(request.intent.name === "helloIntent") {
+            let name = request.intent.slots.fname.value;
+            getNickName(name.toLowerCase(), function (data) {
                 var finalOutput ="Hello "+ data +". Welcome to Developer Week at Austin!";
                     let response = getResponse({
                     output: finalOutput,
