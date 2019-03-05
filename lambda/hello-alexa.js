@@ -13,7 +13,7 @@ exports.handler = (event, context) => {
     else if(request.type === "IntentRequest") {
         if(request.intent.name === "helloIntent") {
             let name = request.intent.slots.fname.value;
-            let output = "Hello "+name+ ". Welcome to Developer Week at Austin!";
+            let output = "Hello "+name+ ". Welcome to Women Who Compute at UTD!";
             let response = getResponse({
                 output: output,
                 reprompt: false,
