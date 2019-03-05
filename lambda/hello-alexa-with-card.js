@@ -56,7 +56,7 @@ function getResponse (opts) {
         response.response.card = {
             type: "Standard",
             title: cardTitle,
-            text: "Welcome to Developer Week at Austin",
+            text: "Welcome to Women who compute",
             image : {
                 smallImageUrl: "https://www.serendipitystamps.com/mm5/pics/stamps/619hellosmall.gif",
                 largeImageUrl: "https://www.serendipitystamps.com/mm5/pics/stamps/619hellosmall.gif"
